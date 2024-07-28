@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/MainLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Learn something new!!"
+        android:padding="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="35dp"/>
+    <TextView
+        android:id="@+id/askTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/MainLabel"
+        android:text="What do you want to learn?"
+        android:padding="10dp"
+        android:textSize="25dp"/>
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_below="@id/askTextName"
+        />
+    <TextView
+        android:id="@+id/askStartTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:text="When do you want to start(time)?"
+        android:padding="16dp"
+        android:textSize="25dp"/>
+    <EditText
+        android:id="@+id/editTextStartTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/askStartTime"
+        android:inputType="time"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/askEndTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextStartTime"
+        android:text="When do you want to end(time)?"
+        android:padding="16dp"
+        android:textSize="25dp"/>
+
+    <EditText
+        android:id="@+id/editTextEndTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/askEndTime"
+        android:inputType="time"
+        android:padding="16dp"/>
+
+    <Button
+        android:id="@+id/enterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEndTime"
+        android:layout_centerHorizontal="true"
+        android:text="Create"/>
+
+</RelativeLayout>
