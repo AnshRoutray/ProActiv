@@ -5,10 +5,7 @@ const app = express();
 const axios = require('axios');
 const {google} = require('googleapis');
 const OpenAI = require("openai");
-const openai = new OpenAI({ apiKey: "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" });
-
-//My Key: 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
-//working key: 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
+const openai = new OpenAI({ apiKey: /*OPENAI KEY*/ });
 
 router.get('/TutorialData', async (req, res) => {
     try {
@@ -70,7 +67,7 @@ router.get('/AIData/:tutorialName', async (req, res) => {
                     // Search for videos or playlists related to the subtopic
                     const response = await axios.get('https://www.googleapis.com/youtube/v3/search', {
                         params: {
-                          key: "AIzaSyASdVj9D2_h5m_4iWegi-2OwXccOblRhas",
+                          key: /*GOOGLE API KEY*/,
                           q: query,
                           part: 'snippet',
                           type: 'video',
